@@ -33,7 +33,7 @@ public class WeatherMainActivity extends  Activity{
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.weather_activity);
             String city = "Istanbul,Turkey";
 
 		/* Latitude and Longitude*/
@@ -95,6 +95,8 @@ public class WeatherMainActivity extends  Activity{
                 }
 
                 Log.d("On post", "inside ");
+
+
 
                 //	Log.d("JSON DATA", weather.location.getCity());
                 cityText.setText(weather.location.getCity() + "," + weather.location.getCountry());
